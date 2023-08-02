@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%-include('includes/head')%>
+    <link rel="stylesheet" href="/styles/restaurants.css" />
+  </head>
+  <body>
+    <!-- avoiding duplicate code using dynamic import from another file in includes folder. -->
+    <%- include('includes/header') %> 
+    <%- include('includes/side-drawer')%>
+    <main>
+      <h1><%= restaurant.name %></h1>
+      <p><%= restaurant.address %> | <%= restaurant.cuisine %></p>
+      <p><%= restaurant.description %></p>
+      <p><a href="<%= restaurant.website %>">view website</a></p>
+    </main>
+  </body>
+</html>

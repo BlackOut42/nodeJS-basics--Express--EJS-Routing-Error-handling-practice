@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%-include('includes/head')%>
+    <link rel="stylesheet" href="/styles/restaurants.css" />
+  </head>
+  <body>
+    <!-- avoiding duplicate code using dynamic import from another file in includes folder. -->
+    <%- include('includes/header') %> <%- include('includes/side-drawer')%>
+    <main>
+      <h1>Recommended restaurants</h1>
+      <% if (numberOfRes === 0) { %>
+      <p>
+        Unfortunately, we have not restaurants yet, maybe try recommending
+        something?
+      </p>
+      <% } else {%>
+      <p>Find your next favorite restaurants with help of our other users!</p>
+      <p>We found <%= numberOfRes %> restaurants!</p>
+      <form action="/restaurants" method="get">
+        <input type="hidden" name="order" value="<%= nextOrder %>" />
+        <button class="btn">Change Order!</button>
+      </form>
+      <ul id="restaurants-list">
+        <% for (const restaurant of restaurants) { %> <%-
+        include('includes/restaurants-page/restaurant-item',{restaurant:restaurant})
+        %> <% } %>
+      </ul>
+      <% } %>
+    </main>
+  </body>
+</html>

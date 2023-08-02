@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Sushi & Stuff",
+    "address": "star Center",
+    "cuisine": "Japanese",
+    "website": "https://www.notneeded.com",
+    "description": "Pretty good ",
+    "id": "Manual Id: 1"
+  },
+  {
+    "name": "The Pina Of Joseph",
+    "address": "Hatikva",
+    "cuisine": "Ashdod, Israel",
+    "website": "https://HapinaIP.com",
+    "description": "WOW JUST WOW!",
+    "id": "Manual Id: 2"
+  },
+  {
+    "name": "Bonjour & stuff",
+    "address": "Haazmaut",
+    "cuisine": "French",
+    "website": "https://www.notneeded.com",
+    "description": "Decent",
+    "id": "83ddca8f-f203-4cd5-8752-282214062adb"
+  }
+]
